@@ -1,24 +1,50 @@
-const getPass = localStorage.getItem("password")
-const getEmail = localStorage.getItem("email")
+const getData = localStorage.getItem("send")
 const formLogin = document.querySelector("form")
+
+console.log(getData);
+
+let data;
+
+data = JSON.parse(getData)
+console.log(data);
+
+// let rom = data.map( item =>{
+// console.log(item);
+// })
+
+
 
 formLogin.addEventListener('submit' , (event) =>{
     event.preventDefault()
     
-if (getEmail === null || getPass === null) {
+if (getData === null || getData === null) {
         console.log("Create an account before LogIn");
 }
 
-const email = document.querySelector("#email").value
-const pass = document.querySelector("#password").value
+let email = document.querySelector("#email")
+let pass = document.querySelector("#password")
 
-if (getEmail === email || getPass === pass) {
 
-    alert("SUCCESFULLY LOGIN");
-    formLogin.reset()
-    window.location = "quiz.html"
-    
-}  
-    else {
-        console.log("incorrect email or pass");}  
+
+    if (getData.includes(email.value) && getData.includes(pass.value)) {
+
+        alert("SUCCESFULLY LOGIN");
+        formLogin.reset()
+        window.location = "quiz.html"
+        
+    }  
+        else  {
+            // console.log("incorrect email or pass");
+            
+            email.value = ""
+            pass.value = ""
+            alert("incorrect email or pass");
+        }  
+
+
+
+
+
+        // email.value = ""
+        // pass.value = ""
 })

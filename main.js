@@ -24,9 +24,11 @@ const arr = []
 
 function local() {
    
-   localStorage.setItem("email", arr.email);
-   localStorage.setItem("password", arr.pass );
-   localStorage.setItem("userName", arr.userName);
+//    localStorage.setItem("email", arr.email);
+//    localStorage.setItem("password", arr.pass );
+//    localStorage.setItem("userName", arr.userName);
+let sendData = localStorage.setItem('send', JSON.stringify(arr))
+console.log(sendData);
 
 }
 
@@ -56,9 +58,15 @@ function validateForm(){
 
 form.addEventListener("submit", (event) => {
    event.preventDefault()     
-   arr.userName = userName.value
-   arr.email = email.value
-   arr.pass = pass.value
+//    arr.userName = userName.value
+//    arr.email = email.value
+//    arr.pass = pass.value
+
+arr.push({
+    email : email.value,
+    pass: pass.value,
+    userName: userName.value
+})
    
    local()
 
@@ -70,7 +78,7 @@ form.addEventListener("submit", (event) => {
 
    form.reset()
    alert('REGISTRATION SUCCESSFULL.')
-   window.location = "index.html"
+//    window.location = "index.html"
         
     })
 
