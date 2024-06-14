@@ -54,14 +54,14 @@ input {
 
 /* Input focus styles */
 input:focus {
-    outline-color: blue;
+    outline-color: #0073c3;
 }
 
 /* Header styles */
 .inform{
     color: #ffffff;
     text-align: center;
-    background-color: blue;
+    background-color: #0073c3;
     font-size: xx-large;
 }
 
@@ -74,7 +74,7 @@ font-size: 60px;}
     justify-content: space-between;
     align-items: center; 
     padding: 10px 20px; 
-    background-color: blue;
+    background-color:#0073c3;
 
 }
 
@@ -94,7 +94,7 @@ font-size: 60px;}
 /* Button styles */
 button {
     color: #ffffff;
-    background-color:blue;
+    background-color:#0073c3;
     padding: 12px 20px; 
     border-radius: 15px;
     font-size: 18px; 
@@ -111,7 +111,7 @@ button:hover{background-color:red;
 
 /* Anchor styles */
 a {
-    color: blue;
+    color: #0073c3;
     text-decoration: none;}
 
 a:hover{color: red;}
