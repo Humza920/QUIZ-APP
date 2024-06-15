@@ -20,9 +20,16 @@ formLogin.addEventListener("submit", (event) => {
     console.log("Create an account before LogIn");
   }
   if ( getData?.includes(email.value) && getData?.includes(pass.value) ) {
-    alert("SUCCESFULLY LOGIN");
-    formLogin.reset();
-    window.location = "quiz.html";
+    Swal.fire({
+      title: 'Success!',
+      text: 'You have successfully logged in!',
+      icon: 'success',
+      confirmButtonText: 'Start Quiz'
+  }).then((result) => {
+          if (result.isConfirmed) {
+              window.location = "quiz.html";
+          }
+      });
   } else {
     console.log("incorrect email or pass");
 
