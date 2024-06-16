@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+/* Default margin, padding, and box-sizing */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Styling the body */
+body {
+  background-color: #ffffff;
+}
+
+/* Top section styles */
+#top {
+  display: flex;
+  padding: 10px 20px;
+  background-color: #0073c3;
+}
+
+#head {
+  color: #ffffff;
+  font-size: 60px;
+}
+
+/* Container styles */
+.container {
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Content styles */
+.content {
+  max-width: 100%;
+  background-color: #ffffff;
+  margin: 80px auto 20px;
+  padding: 15px;
+  border: 2px solid black;
+  box-shadow: 4px 3px 3px rgba(3, 3, 3, 0.8);
+  border-radius: 10px;
+}
+
+/* Button-Div styles */
+.button {
+  text-align: end;
+}
+
+#Btn{
+    color: #ffffff;
+    background-color: #0073c3;
+    padding: 7px;
+    font-size: large;
+    border-radius: 15px;
+    transition: ease-in 0.2s;
+    cursor: pointer;
+}
+
+#Btn:hover{
+    background-color: red;
+    transition: ease-out 0.2s;}
+
+
+.submit{text-align: center;}
+
+
+#submit{
+    color: #ffffff;
+    background-color: #0073c3;
+    padding: 7px;
+    font-size: x-large;
+    border-radius: 15px;
+    transition: ease-in 0.2s;
+    cursor: pointer;
+}
+
+#submit:hover{
+    background-color: red;
+    transition: ease-out 0.2s;}

@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 /* Default margin, padding, and box-sizing */
 * {
     margin: 0;
@@ -22,8 +23,8 @@ body {
 .content {
     max-width: 100%; 
     background-color: #ffffff;
-    margin: 130px auto 20px; 
-    padding: 20px;
+    margin: 80px auto 20px; 
+    padding: 15px;
     border: 2px solid black;
     box-shadow: 4px 3px 3px rgba(3, 3, 3, 0.8);
     border-radius: 10px;

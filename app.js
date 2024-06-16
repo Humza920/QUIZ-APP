@@ -17,7 +17,7 @@ formLogin.addEventListener("submit", (event) => {
   event.preventDefault();
 
   if (getData === null || getData === "") {
-    console.log("Create an account before LogIn");
+    alert("Create an account before LogIn");
   }
   if ( getData?.includes(email.value) && getData?.includes(pass.value) ) {
     Swal.fire({
