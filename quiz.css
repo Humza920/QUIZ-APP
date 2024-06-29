@@ -47,7 +47,7 @@ body {
   text-align: end;
 }
 
-#Btn{
+#nextBtn{
     color: #ffffff;
     background-color: #0073c3;
     padding: 7px;
@@ -57,7 +57,7 @@ body {
     cursor: pointer;
 }
 
-#Btn:hover{
+#nextBtn:hover{
     background-color: red;
     transition: ease-out 0.2s;}
 

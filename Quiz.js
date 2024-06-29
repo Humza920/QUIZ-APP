@@ -1,5 +1,8 @@
-let div = document.querySelector('.quest')
-let nextBtn = document.querySelector('#Btn')
+
+// GET HTML ELEMENT IN JAVASCRIPT
+let subBtn = document.querySelector('#submit')
+let div = document.querySelector('.question')
+let nextBtn = document.querySelector('#nextBtn')
 let ul = document.querySelector('.main-ul')
 let index = 0
 let result = 0
