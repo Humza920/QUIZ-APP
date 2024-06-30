@@ -47,34 +47,36 @@ body {
   text-align: end;
 }
 
-#nextBtn{
-    color: #ffffff;
-    background-color: #0073c3;
-    padding: 7px;
-    font-size: large;
-    border-radius: 15px;
-    transition: ease-in 0.2s;
-    cursor: pointer;
+#nextBtn {
+  color: #ffffff;
+  background-color: #0073c3;
+  padding: 7px;
+  font-size: large;
+  border-radius: 15px;
+  transition: ease-in 0.2s;
+  cursor: pointer;
 }
 
-#nextBtn:hover{
-    background-color: red;
-    transition: ease-out 0.2s;}
-
-
-.submit{text-align: center;}
-
-
-#submit{
-    color: #ffffff;
-    background-color: #0073c3;
-    padding: 7px;
-    font-size: x-large;
-    border-radius: 15px;
-    transition: ease-in 0.2s;
-    cursor: pointer;
+#nextBtn:hover {
+  background-color: red;
+  transition: ease-out 0.2s;
 }
 
-#submit:hover{
-    background-color: red;
-    transition: ease-out 0.2s;}
+.submit {
+  text-align: center;
+}
+
+#submit {
+  color: #ffffff;
+  background-color: #0073c3;
+  padding: 7px;
+  font-size: x-large;
+  border-radius: 15px;
+  transition: ease-in 0.2s;
+  cursor: pointer;
+}
+
+#submit:hover {
+  background-color: red;
+  transition: ease-out 0.2s;
+}

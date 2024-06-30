@@ -19,17 +19,17 @@ formLogin.addEventListener("submit", (event) => {
   if (getData === null || getData === "") {
     alert("Create an account before LogIn");
   }
-  if ( getData?.includes(email.value) && getData?.includes(pass.value) ) {
+  if (getData?.includes(email.value) && getData?.includes(pass.value)) {
     Swal.fire({
-      title: 'Success!',
-      text: 'You have successfully logged in!',
-      icon: 'success',
-      confirmButtonText: 'Start Quiz'
-  }).then((result) => {
-          if (result.isConfirmed) {
-              window.location = "quiz.html";
-          }
-      });
+      title: "Success!",
+      text: "You have successfully logged in!",
+      icon: "success",
+      confirmButtonText: "Start Quiz",
+    }).then((result) => {
+      if (result.isConfirmed) {
+        window.location = "quiz.html";
+      }
+    });
   } else {
     console.log("incorrect email or pass");
 
@@ -40,6 +40,5 @@ formLogin.addEventListener("submit", (event) => {
 
   email.value = "";
   pass.value = "";
-
 });
 // end{code}
